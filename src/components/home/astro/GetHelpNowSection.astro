@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import BlackMobileIcon from "@/assets/icons/black-phone.svg";
+import { commonBtnsData } from "@/data/commonBtnsData";
+import GetHelpNowBtn from "./GetHelpNowBtn.astro";
+import CallTextBtn from "./CallTextBtn.astro";
+---
+
+<section
+  class="bg-[#553665] py-10 md:py-[72px] px-4 flex flex-col justify-center items-center gap-7"
+>
+<h2  class="max-w-[944px] w-full mx-auto text-[34px] font-Frank text-white font-normal leading-[42px] md:leading-[51px] text-center">
+Care Counselors Available Now
+</h2>
+  <h4
+    class="max-w-[944px] w-full mx-auto text-[32px] font-Frank text-white font-normal leading-[42px] md:leading-[51px] text-center"
+  >
+Reach out any time. Our compassionate experts are available 24/7 to answer your questions and can even facilitate a discreet admission within hours.
+  </h4>
+  
+
+  
+  <CallTextBtn />
+  <p class="font-medium text-base leading-[27px] text-white">
+   100% Confidential  | Zero Obligations | Risk-Free
+   </p>
+</section>
