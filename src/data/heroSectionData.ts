@@ -5,9 +5,9 @@ export const heroSectionData = {
  
 
   contactNumber: "(855)-871-53321",
-  helpText: "SPEAK WITH A CARE COUNSELOR",
-  insuranceBtnText: "VERIFY YOUR ",
-  insuranceBtnDes: "INSURANCE",
+  helpText: "Speak With A Care Counselor",
+  insuranceBtnText: "Verify Your ",
+  insuranceBtnDes: "Insurance",
   reviewheading: "Trusted by 500+ families. Rated 5/5 on Google.",
   reviews: {
     title: "200+ Reviews",

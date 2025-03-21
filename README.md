@@ -7,7 +7,7 @@
 
 ## Clone the repository
 
-    git clone https://github.com/detailswes/rehab-center.git
+    https://github.com/detailswes/westValley.git
 
 ## Install the required dependecies
 

@@ -15,10 +15,9 @@ import ContactFormPopupController from "../react/ContactFormPopupController";
       class="pl-4 xl:ml-auto text-white w-full pb-4 pr-4 lg:pr-0 lg:max-w-[582px] mr-0 lg:mr-[36px]"
     >
       <h1
-        class="text-4xl md:text-5xl font-normal font-Frank leading-[42px] md:leading-[64px]"
+        class="text-4xl md:text-5xl bg-text-gradient bg-clip-text font-normal font-Frank text-transparent leading-[42px] md:leading-[64px]"
       >
-        <span class="text-[#1F2937]">Begin Your Path to Recovery with a </span>
-        <span class="text-[#FBBF24]">Safe & Comfortable Medical Detox</span>
+        {heroSectionData.heading}
       </h1>
       <p
         class="text-base md:text-xl !leading-[34px] font-medium text-secondary max-w-[498px]"
@@ -28,13 +27,13 @@ import ContactFormPopupController from "../react/ContactFormPopupController";
       <p
         class="text-[#1F2937] text-base md:text-xl font-medium leading-[34px] md:mt-1"
       >
-        We know taking the first step is hard, but you're not alone. Our team of dedicated medical professionals is available <span class="text-[#FBBF24]">24/7</span> to support you.
+        {heroSectionData.subheading}
       </p>
 
       <div class="flex flex-col-reverse sm:flex-row mt-7 gap-[10px]">
         <div>
           <div id="verifyBtn"
-            class=" group shadow-btn-custom text-center cursor-pointer py-3 sm:py-[4px] rounded-full px-6 lg:min-w-[222px] w-full bg-transparent hover:bg-[#f59e0b] hover:text-white hover:border-[#FBBF24] transition-colors border-2 border-[#FBBF24] leading-6"
+            class="group shadow-btn-custom text-center cursor-pointer py-4 sm:py-[2px] rounded-full px-6 lg:min-w-[222px] w-full bg-transparent hover:bg-[#f59e0b] hover:text-white hover:border-[#f59e0b] transition-colors border-2 border-[#FBBF24] leading-6"
           >
             <p
               class="group-hover:bg-none group-hover:text-[#1F2937] text-sm md:text-base bg-text-gradient bg-clip-text text-transparent font-medium md:font-semibold"
@@ -51,7 +50,7 @@ import ContactFormPopupController from "../react/ContactFormPopupController";
         <div>
           <a href={`tel:${heroSectionData.contactNumber}`}>
             <div
-              class="relative flex py-5 justify-center sm:justify-start  sm:py-1 md:py-3 px-3 md:px-6 rounded-full bg-[#FBBF24] text-[#1F2937] overflow-hidden transition-all duration-300 ease-in-out items-center gap-1 md:gap-3 group"
+              class="relative flex py-5 justify-center sm:justify-start sm:py-1 md:py-3 px-3 md:px-6 rounded-full bg-[#FBBF24] text-[#1F2937] overflow-hidden transition-all duration-300 ease-in-out items-center gap-1 md:gap-3 group"
             >
               <div
                 class="absolute inset-0 bg-[#f59e0b] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out"
@@ -140,4 +139,4 @@ import ContactFormPopupController from "../react/ContactFormPopupController";
       });
     }
   });
-</script>
+</script> 
