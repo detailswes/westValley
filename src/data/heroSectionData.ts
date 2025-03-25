@@ -1,9 +1,8 @@
 export const heroSectionData = {
   heading:
     "Begin Your Path to Recovery with a Safe & Comfortable Medical Detox",
-  subheading: "We know taking the first step is hard, but you’re not alone. Our team of dedicated medical professionals is available 24/7 to support you.",
- 
-
+  subheading:
+    "We know taking the first step is hard, but you’re not alone. Our team of dedicated medical professionals is available 24/7 to support you.",
   contactNumber: "(855)-871-53321",
   helpText: "Speak With A Care Counselor",
   insuranceBtnText: "Verify Your ",

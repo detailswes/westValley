@@ -10,55 +10,49 @@ import {
 // Data for FAQs
 const faqItems = [
   {
-    question: (
-      <div>
-        Comfort-First Medical Detox: <br /><span className="text-sm">Immediate Relief, Minimal withdrawal</span>
-      </div>
-    ),
+    question: "Will my insurance cover treatment?",
     answer: (
       <div>
         <p className="mb-4">
-        We understand the anxiety around detox. That's why we've designed our medical detox program to prioritize your comfort above all else. Utilizing evidence-based protocols, and medication when appropriate, our expert medical team is dedicated to minimizing withdrawal symptoms and ensuring you feel as safe and comfortable as possible throughout the process. Your well-being is our central focus, and we're here to support you every step of the way.
-
-
+          Most likely, yes. We work with most major commercial insurance
+          providers to make treatment as affordable as possible—sometimes with
+          little to no out-of-pocket cost. Call now, and we’ll verify your
+          benefits in minutes.
         </p>
-       
+        <p className="mb-[18px]">
+          Rehab Accepts Anthem InsuranceRehab Accepts Aetna InsuranceAccepts
+          Cigna InsuranceAccepts Geha InsuranceAccepts Elevance InsuranceAccepts
+          United Healthcare Insurance Don't see your insurance provider? Don't
+          worry we probably work with them.
+        </p>
       </div>
     ),
   },
   {
-    question: (
-      <div>
-        24/7 Expert Medical Team: <br /> <span className="text-sm">Around the Clock Support from Expert who Understand</span> 
-      </div>
-    ),
-    answer: "Your safety and well-being are in the hands of deeply experienced and compassionate medical professionals, available to you 24 hours a day, 7 days a week. Our board-certified physicians and dedicated nursing staff are experts in managing complex detox cases, providing continuous monitoring and adjusting your personalized care plan to meet your evolving needs with empathy and skill.",
+    question: "What addictions do you treat?",
+    answer:
+      "If it’s addictive, we treat it. Alcohol, opioids, benzos, stimulants, prescription medications, and more. But addiction isn’t just about substances—it’s about why. We also address trauma, anxiety, depression, and mental health conditions because real recovery means healing the root cause.",
   },
   {
-    question: (
-      <div>
-        Concierge-Level Care: <br /> <span className="text-sm">Effortless Admissions, Treatment Designed just for you</span> 
-      </div>
-    ),
-    answer: "We believe getting help should be as seamless and stress-free as possible. Our concierge-level intake handles all the logistics – from your insurance, to travel arrangements, to your private curbside arrival. In our exclusive 6-client setting, we go beyond standard care to create a truly personalized detox plan, ensuring your individual needs and preferences are at the heart of your treatment experience.",
+    question: "How soon can I start?",
+    answer:
+      "Today. We offer same-day admissions because when you’re ready, waiting isn’t an option. Call now—we’ll take care of everything.",
   },
   {
-    question: (
-      <div>
-       Private, Retreat-Like Setting: <br /> <span className="text-sm">Nutritious Meals, Comfortable Accommodations & Wellness Focused</span> 
-      </div>
-    ),
-    answer: "Our boutique facility offers a peaceful, upscale setting designed for deep healing, free from distractions and triggers.",
+    question: "How do I know I’m choosing the right treatment center?",
+    answer:
+      "Because we’re nationally accredited. Novara Recovery is Joint Commission (JCAHO) accredited and LegitScript certified, meaning we meet the highest standards of safety, care, and long-term recovery success.",
   },
   {
-    question: (
-      <div>
-        Verified Results: <br /> <span className="text-sm">Experience why Over 125 Clients Rated Us 5-stars</span> 
-      </div>
-    ),
-    answer: "Unlike large facilities, we focus all available resources on a maximum of 6 clients at a time, ensuring your 5-star treatment experience is exclusively tailored for you.",
+    question: "Can my family be involved in my recovery?",
+    answer:
+      "Absolutely. Addiction affects everyone—so healing should, too. We offer family therapy, education, and ongoing support to help you and your loved ones move forward together.",
   },
- 
+  {
+    question: " What if I’ve tried treatment before and it didn’t work?",
+    answer:
+      "Then you haven’t had the right treatment. Recovery isn’t about willpower—it’s about having a system that works. Our evidence-based, personalized approach gives you a plan that’s built around you. This time can be different. Let’s make it work.",
+  },
 ];
 
 export default function Faq() {
@@ -67,7 +61,7 @@ export default function Faq() {
       <div className="border-dashed border-t-2 border-[#E6D8CE] mt-10 md:my-20" />
       <section className="my-10 md:mt-[68px] md:mb-[90px]">
         <h2 className="text-4xl md:text-[56px] text-center font-normal bg-text-gradient text-transparent bg-clip-text font-Frank leading-[42px] md:leading-[62px] ">
-        Why Choose West Valley Detox Center
+          You Probably Have Questions. We Have Answers.
         </h2>
         <div className="w-full max-w-[200px] h-[1px] mt-4 orb-gradient-line mx-auto"></div>
 
@@ -80,12 +74,12 @@ export default function Faq() {
                   value={`item-${index + 1}`}
                   className={`mt-${
                     index > 0 ? 7 : 0
-                  } transition-shadow  hover:shadow-lg hover:shadow-primary`}
+                  } transition-shadow  hover:shadow-lg hover:shadow-[#f59e0b]`}
                 >
-                  <AccordionTrigger className="font-normal font-Inter text-[#1F1168]">
+                  <AccordionTrigger className="font-normal font-Inter text-text">
                     {item.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-base text-[#1F1168] font-normal">
+                  <AccordionContent className="text-base text-text font-normal">
                     {typeof item.answer === "string" ? (
                       <p>{item.answer}</p>
                     ) : (
