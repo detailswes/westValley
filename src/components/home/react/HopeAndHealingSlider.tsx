@@ -2,9 +2,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState, type JSX } from "react";
-import ProgramOneImage from "@/assets/images/program-one.webp";
-import ProgramTwoImage from "@/assets/images/program-two.webp";
-import ProgramThreeImage from "@/assets/images/program-three.webp";
+import ProgramOneImage from "@/assets/images/expert-medical-team.webp";
+import ProgramTwoImage from "@/assets/images/medical-supervision.jpg";
+import ProgramThreeImage from "@/assets/images/program-two.webp";
 import Popup from "@/components/modal/ProgramPopup";
 import { Image } from "astro:assets";
 interface program {
@@ -64,9 +64,9 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "Inpatient Detox",
+      text: "Expert Care You Can Trust",
       description:
-        "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
+        "Our team includes board-certified physicians, registered nurses, and licensed addiction specialists with years of experience in medical detox.",
     },
     {
       image: (
@@ -76,9 +76,9 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "Alcohol Rehab",
+      text: "24/7 Medical Supervision",
       description:
-        "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
+        "Your safety is our priority. We provide round-the-clock medical care to ensure you are stable, comfortable, and supported through every step.",
     },
     {
       image: (
@@ -88,46 +88,46 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "Alumni Program",
+      text: "Compassionate & Personalized Care",
       description:
-        "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
+        "No two people are the same. That's why we tailor detox plans to your unique needs—ensuring the safest, most comfortable experience possible.",
     },
-    {
-      image: (
-        <img
-          src={ProgramOneImage.src}
-          alt="program-one"
-          className="w-full mt-[18px]"
-        />
-      ),
-      text: "Inpatient Detox",
-      description:
-        "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
-    },
-    {
-      image: (
-        <img
-          src={ProgramTwoImage.src}
-          alt="program-two"
-          className="w-full mt-[18px]"
-        />
-      ),
-      text: "Alcohol Rehab",
-      description:
-        "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
-    },
-    {
-      image: (
-        <img
-          src={ProgramThreeImage.src}
-          alt="program-three"
-          className="w-full mt-[18px]"
-        />
-      ),
-      text: "Alumni Program",
-      description:
-        "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
-    },
+    // {
+    //   image: (
+    //     <img
+    //       src={ProgramOneImage.src}
+    //       alt="program-one"
+    //       className="w-full mt-[18px]"
+    //     />
+    //   ),
+    //   text: "Inpatient Detox",
+    //   description:
+    //     "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
+    // },
+    // {
+    //   image: (
+    //     <img
+    //       src={ProgramTwoImage.src}
+    //       alt="program-two"
+    //       className="w-full mt-[18px]"
+    //     />
+    //   ),
+    //   text: "Alcohol Rehab",
+    //   description:
+    //     "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
+    // },
+    // {
+    //   image: (
+    //     <img
+    //       src={ProgramThreeImage.src}
+    //       alt="program-three"
+    //       className="w-full mt-[18px]"
+    //     />
+    //   ),
+    //   text: "Alumni Program",
+    //   description:
+    //     "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
+    // },
   ];
 
   const closePopup = () => {
@@ -144,10 +144,10 @@ const HopeAndHealingSlider = () => {
       {" "}
       <section className="px-4 md:px-0">
         <h2 className="text-center text-4xl md:text-5xl text-[#1F1168] mt-10 md:mt-[89px] font-normal font-Frank">
-          Find Hope and Healing
+          Safe & Medically Supervised Detox
         </h2>
         <p className="text-center text-base md:text-[22px] font-normal mt-2 md:mt-5 text-text">
-          Discover Our Comprehensive Rehab Programs
+          A team of experts. 24/7 medical supervision. Personalized care designed for your safety and comfort.
         </p>
         <div className="w-full max-w-[200px] h-[1px] orb-gradient-line mx-auto"></div>
       </section>

@@ -125,7 +125,7 @@ export default function Navbar() {
                 {/* Text */}
                 <div className="transition-all duration-300 ease-in-out">
                   <p className="text-xs md:text-sm font-bold">
-                  24/7 Care Counselors:
+                  Free Immediate Support:
                   </p>
                   <p className="text-xs md:text-xs font-medium md:font-semibold leading-6">
                   (626) 784-6712
