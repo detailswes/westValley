@@ -3,7 +3,7 @@ import room2 from "@/assets/images/expert-medical-team.webp";
 import room3 from "@/assets/images/concierge-level-care.webp";
 import room4 from "@/assets/images/private-retreat-like-setting.webp";
 import room5 from "@/assets/images/verified-results.webp";
-import room6 from "@/assets/images/image1.svg";
+import room6 from "@/assets/images/cheer.jpg";
 
 export const transformSectionData = {
   heading: "Why Choose West Valley Detox Center?",
