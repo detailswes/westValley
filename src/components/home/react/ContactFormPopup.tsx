@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 interface ContactFormPopupProps {
   isOpen: boolean;
@@ -18,17 +18,21 @@ interface FormErrors {
   telephone: string;
 }
 
-const ContactFormPopup: React.FC<ContactFormPopupProps> = ({ isOpen, onClose, contactNumber }) => {
+const ContactFormPopup: React.FC<ContactFormPopupProps> = ({
+  isOpen,
+  onClose,
+  contactNumber,
+}) => {
   const [formData, setFormData] = useState<FormData>({
-    fullName: '',
-    email: '',
-    telephone: '',
+    fullName: "",
+    email: "",
+    telephone: "",
   });
 
   const [errors, setErrors] = useState<FormErrors>({
-    fullName: '',
-    email: '',
-    telephone: '',
+    fullName: "",
+    email: "",
+    telephone: "",
   });
 
   const [touched, setTouched] = useState<Record<string, boolean>>({
@@ -39,32 +43,31 @@ const ContactFormPopup: React.FC<ContactFormPopupProps> = ({ isOpen, onClose, co
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
- 
   useEffect(() => {
     if (!isOpen) {
       setTimeout(() => {
-        setFormData({ fullName: '', email: '', telephone: '' });
-        setErrors({ fullName: '', email: '', telephone: '' });
+        setFormData({ fullName: "", email: "", telephone: "" });
+        setErrors({ fullName: "", email: "", telephone: "" });
         setTouched({ fullName: false, email: false, telephone: false });
         setIsSubmitted(false);
-      }, 300); 
+      }, 300);
     }
   }, [isOpen]);
 
   const validateField = (name: keyof FormData, value: string): string => {
     switch (name) {
-      case 'fullName':
-        return value.trim() ? '' : 'Name is required';
-      case 'email':
-        if (!value.trim()) return 'Email is required';
+      case "fullName":
+        return value.trim() ? "" : "Name is required";
+      case "email":
+        if (!value.trim()) return "Email is required";
         const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        return emailRegex.test(value) ? '' : 'Invalid email address';
-      case 'telephone':
-        if (!value.trim()) return 'Contact Number is required';
-        if (!/^\d{10}$/.test(value)) return 'Contact Number must be 10 digits';
-        return '';
+        return emailRegex.test(value) ? "" : "Invalid email address";
+      case "telephone":
+        if (!value.trim()) return "Contact Number is required";
+        if (!/^\d{10}$/.test(value)) return "Contact Number must be 10 digits";
+        return "";
       default:
-        return '';
+        return "";
     }
   };
 
@@ -88,24 +91,21 @@ const ContactFormPopup: React.FC<ContactFormPopupProps> = ({ isOpen, onClose, co
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    
     setTouched({
       fullName: true,
       email: true,
       telephone: true,
     });
 
-    
     const newErrors: FormErrors = {
-      fullName: validateField('fullName', formData.fullName),
-      email: validateField('email', formData.email),
-      telephone: validateField('telephone', formData.telephone),
+      fullName: validateField("fullName", formData.fullName),
+      email: validateField("email", formData.email),
+      telephone: validateField("telephone", formData.telephone),
     };
 
     setErrors(newErrors);
 
- 
-    if (!Object.values(newErrors).some((error) => error !== '')) {
+    if (!Object.values(newErrors).some((error) => error !== "")) {
       setIsSubmitted(true);
     }
   };
@@ -117,25 +117,38 @@ const ContactFormPopup: React.FC<ContactFormPopupProps> = ({ isOpen, onClose, co
   };
 
   return (
-    <div 
-      className={`fixed inset-0 bg-black bg-opacity-50 z-40 ${isOpen ? 'flex' : 'hidden'} items-center justify-center`}
+    <div
+      className={`fixed inset-0 bg-black bg-opacity-50 z-40 ${
+        isOpen ? "flex" : "hidden"
+      } items-center justify-center`}
       onClick={handleBackdropClick}
     >
-      <div className="bg-white rounded-lg p-8 max-w-sm mx-auto z-50 relative">
-        <button 
+      <div className="bg-white rounded-lg p-8 w-full max-w-lg mx-auto z-50 relative">
+        <button
           onClick={onClose}
           className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </button>
 
-        <section className="max-w-sm mx-auto bg-white rounded-lg">
-          <p className="text-center font-bold  mt-4 text-primary">
+        <section className="max-w-lg w-full mx-auto bg-white rounded-lg">
+          <p className="text-xl font-semibold  mt-4">
             Provide your contact details
           </p>
-          
+
           {!isSubmitted ? (
             <form onSubmit={handleSubmit} className="mt-4 space-y-3">
               <div>
@@ -148,7 +161,7 @@ const ContactFormPopup: React.FC<ContactFormPopupProps> = ({ isOpen, onClose, co
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                    errors.fullName && touched.fullName ? 'border-red-500' : ''
+                    errors.fullName && touched.fullName ? "border-red-500" : ""
                   }`}
                 />
                 {errors.fullName && touched.fullName && (
@@ -166,7 +179,7 @@ const ContactFormPopup: React.FC<ContactFormPopupProps> = ({ isOpen, onClose, co
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                    errors.email && touched.email ? 'border-red-500' : ''
+                    errors.email && touched.email ? "border-red-500" : ""
                   }`}
                 />
                 {errors.email && touched.email && (
@@ -185,7 +198,9 @@ const ContactFormPopup: React.FC<ContactFormPopupProps> = ({ isOpen, onClose, co
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                    errors.telephone && touched.telephone ? 'border-red-500' : ''
+                    errors.telephone && touched.telephone
+                      ? "border-red-500"
+                      : ""
                   }`}
                 />
                 {errors.telephone && touched.telephone && (
@@ -195,7 +210,7 @@ const ContactFormPopup: React.FC<ContactFormPopupProps> = ({ isOpen, onClose, co
 
               <button
                 type="submit"
-                className="w-full bg-primary text-white py-2 rounded-md transition hover:bg-primary/90"
+                className="w-full bg-blue-600 text-white py-2 rounded-md transition hover:bg-blue-700"
               >
                 SAVE
               </button>

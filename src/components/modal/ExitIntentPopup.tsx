@@ -4,7 +4,6 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import ExitIntent from "@/utils/ExitIntent";
 import { useEffect, useState, useRef } from "react";
 
-
 export function ExitIntentPopup() {
   const [isOpen, setIsOpen] = useState(false);
   const inactivityTimerRef = useRef<NodeJS.Timeout | null>(null);
@@ -126,7 +125,7 @@ export function ExitIntentPopup() {
                 </a>
               </div>
               <div>
-                <a href="tel:(855)-871-53321">
+                <a href="tel:(626) 784-6712">
                   <div className="relative flex justify-center md:justify-start py-1 md:py-3.5 px-3 md:px-6 rounded-full bg-[#FBBF24] text-[#1f2937] overflow-hidden transition-all duration-300 ease-in-out items-center gap-1 md:gap-3 group">
                     {/* Background Slide Effect */}
                     <div className="absolute inset-0 bg-[#F59e0b] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out"></div>
@@ -168,10 +167,10 @@ export function ExitIntentPopup() {
                       {/* Text */}
                       <div className="transition-all duration-300 ease-in-out">
                         <p className="text-xs md:text-sm font-bold">
-                        Free Confidential Helpline
+                          Free Confidential Helpline
                         </p>
                         <p className="text-xs md:text-xs font-medium md:font-semibold leading-6">
-                          (855)-871-53321
+                          (626) 784-6712
                         </p>
                       </div>
                     </div>

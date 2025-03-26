@@ -1,6 +1,6 @@
 import { Button } from "../ui/button";
 import Logo from "@/assets/images/Logo.svg";
-import Logo2 from "@/assets/images/logo (2).svg"
+import Logo2 from "@/assets/images/logo (2).svg";
 import { useEffect, useRef, useState } from "react";
 
 const NAV_LINKS = [
@@ -83,7 +83,7 @@ export default function Navbar() {
 
         {/* Right: Help Icon & Text */}
         <div className="ml-auto">
-          <a href="tel:(855)-871-53321">
+          <a href="tel:(626) 784-6712">
             <div className="relative flex py-1 md:py-2 px-3 md:px-6 rounded-full bg-[#FBBF24] text-[#1F2937] overflow-hidden transition-all duration-300 ease-in-out items-center gap-1 md:gap-3 group">
               {/* Background Slide Effect */}
               <div className="absolute inset-0 bg-[#f59e0b] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out"></div>
@@ -125,10 +125,10 @@ export default function Navbar() {
                 {/* Text */}
                 <div className="transition-all duration-300 ease-in-out">
                   <p className="text-xs md:text-sm font-bold">
-                  Free Immediate Support:
+                    Free Immediate Support:
                   </p>
                   <p className="text-xs md:text-xs font-medium md:font-semibold leading-6">
-                  (626) 784-6712
+                    (626) 784-6712
                   </p>
                 </div>
               </div>
