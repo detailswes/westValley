@@ -12,7 +12,7 @@ const AccordionItem = React.forwardRef<
   <AccordionPrimitive.Item
     ref={ref}
     className={cn(
-      "bg-white px-4 sm:px-9 py-2 rounded-[18px] data-[state=open]:border-[#f59e0b] data-[state=open]:border-2 data-[state=open]:shadow-[0px_6px_16px_0px_rgba(74,58,255,0.19)] data-[state-closed]:shadow-[0px_5px_16px_0px_rgba(8,15,52,0.06)]",
+      "bg-white px-4 sm:px-9 py-2 rounded-[18px] data-[state=open]:border-[#FBBF24] data-[state=open]:border-2 data-[state=open]:shadow-[0px_6px_16px_0px_rgba(74,58,255,0.19)] data-[state-closed]:shadow-[0px_5px_16px_0px_rgba(8,15,52,0.06)]",
       className
     )}
     {...props}
@@ -35,7 +35,7 @@ const AccordionTrigger = React.forwardRef<
     >
       {children}
       <svg
-        className="text-primary transition-transform duration-200 group-data-[state=open]:rotate-90 group-data-[state=open]:text-white"
+        className="text-[#FBBF24] transition-transform duration-200 group-data-[state=open]:rotate-90 group-data-[state=open]:text-white"
         width="83"
         height="83"
         viewBox="0 0 83 83"
@@ -47,7 +47,7 @@ const AccordionTrigger = React.forwardRef<
             cx="41.4875"
             cy="36.4017"
             r="25.3309"
-            className="fill-white transition-colors duration-200 group-data-[state=open]:fill-[#f59e0b]"
+            className="fill-white transition-colors duration-200 group-data-[state=open]:fill-[#FBBF24]"
           />
         </g>
         <path

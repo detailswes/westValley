@@ -6,8 +6,7 @@ import room5 from "@/assets/images/verified-results.webp";
 import room6 from "@/assets/images/image1.svg";
 
 export const transformSectionData = {
-  heading:
-    "Why Choose West Vally Detox Center?",
+  heading: "Why Choose West Valley Detox Center?",
   description:
     "We believe true healing comes from precise, personalized attention. Unlike large facilities, we focus all available resources on a maximum of 6 clients at a time, ensuring your treatment is exclusively tailored for you.",
   images: [

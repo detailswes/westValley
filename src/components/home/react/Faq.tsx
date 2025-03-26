@@ -41,7 +41,7 @@ const faqItems = [
   {
     question: "How do I know I’m choosing the right treatment center?",
     answer:
-      "Because we’re nationally accredited. Novara Recovery is Joint Commission (JCAHO) accredited and LegitScript certified, meaning we meet the highest standards of safety, care, and long-term recovery success.",
+      "Because we’re nationally accredited. West Valley Recovery is Joint Commission (JCAHO) accredited and LegitScript certified, meaning we meet the highest standards of safety, care, and long-term recovery success.",
   },
   {
     question: "Can my family be involved in my recovery?",
