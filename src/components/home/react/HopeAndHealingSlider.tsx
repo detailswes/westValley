@@ -23,6 +23,8 @@ const HopeAndHealingSlider = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    swipe: window.innerWidth <= 768, // Allow swiping only on mobile
+    draggable: window.innerWidth <= 768, // Allow dragging only on mobile
     responsive: [
       {
         breakpoint: 1024,
@@ -50,6 +52,7 @@ const HopeAndHealingSlider = () => {
       },
     ],
   };
+  
 
   useEffect(() => {
     setIsMounted(true);
@@ -162,8 +165,8 @@ const HopeAndHealingSlider = () => {
               onClick={() => handleImageClick(program)}
               className="w-[424px] pt-5 pl-4 pb-4 bg-[#FDF7F3] cursor-pointer hover:bg-[#D98918] group transition-colors"
             >
-              <p className="text-[#170F49] group-hover:text-white transition-colors font-semibold text-[22px]">
-                {program.text}
+<p className="text-[#170F49] group-hover:text-white transition-colors font-semibold text-[22px]">
+{program.text}
               </p>
               {program.image}
 
