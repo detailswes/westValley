@@ -18,7 +18,7 @@ const HopeAndHealingSlider = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedProgram, setSelectedProgram] = useState<program | null>(null);
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -37,6 +37,7 @@ const HopeAndHealingSlider = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 1,
+          dots: true,
         },
       },
       {
@@ -44,6 +45,7 @@ const HopeAndHealingSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         },
       },
     ],
@@ -147,7 +149,8 @@ const HopeAndHealingSlider = () => {
           Safe & Medically Supervised Detox
         </h2>
         <p className="text-center text-base md:text-[22px] font-normal mt-2 md:mt-5 text-text">
-          A team of experts. 24/7 medical supervision. Personalized care designed for your safety and comfort.
+          A team of experts. 24/7 medical supervision. Personalized care
+          designed for your safety and comfort.
         </p>
         <div className="w-full max-w-[200px] h-[1px] orb-gradient-line mx-auto"></div>
       </section>
