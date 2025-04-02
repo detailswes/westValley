@@ -7,7 +7,7 @@
 
 ## Clone the repository
 
-    https://github.com/detailswes/westValley.git
+    git clone https://github.com/detailswes/westValley.git
 
 ## Install the required dependecies
 

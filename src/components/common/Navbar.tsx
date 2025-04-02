@@ -1,5 +1,4 @@
 import { Button } from "../ui/button";
-import Logo from "@/assets/images/Logo.svg";
 import Logo2 from "@/assets/images/logo (2).svg";
 import { useEffect, useRef, useState } from "react";
 
